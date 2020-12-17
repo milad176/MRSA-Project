@@ -1,0 +1,12 @@
+.photo-control {
+  min-height: 300px;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px dashed blue;
+  margin: 5px;
+}
+
+.card-wrapper {
+  width: 32%;
+  margin-left: 15px;
+}

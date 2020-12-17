@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "5ad7b45b-21cd-4646-889b-43c5d9f6ee4a",
+		"name": "MRSA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Cities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:64565/api/cities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "64565",
+					"path": [
+						"api",
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add City Query string",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:64565/api/cities/add?cityName=philadelphia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "64565",
+					"path": [
+						"api",
+						"cities",
+						"add"
+					],
+					"query": [
+						{
+							"key": "cityName",
+							"value": "philadelphia"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add City",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:64565/api/cities/add/Chicago",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "64565",
+					"path": [
+						"api",
+						"cities",
+						"add",
+						"Chicago"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add City FromBody",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"Florida\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:64565/api/cities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "64565",
+					"path": [
+						"api",
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete City",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:64565/api/cities/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "64565",
+					"path": [
+						"api",
+						"cities",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
