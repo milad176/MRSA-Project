@@ -5056,11 +5056,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\milad\\Desktop\\MRSA-master\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\milad\\Desktop\\MRSA\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "C:\\Users\\milad\\Desktop\\MRSA-master\\WebAPI\\WebAPI.csproj",
+      "projectPath": "C:\\Users\\milad\\Desktop\\MRSA\\WebAPI\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\milad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\milad\\Desktop\\MRSA-master\\WebAPI\\obj\\",
+      "outputPath": "C:\\Users\\milad\\Desktop\\MRSA\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h4HEJDFnes1yDEQIL3GSEUe829LXe6gZ0QpXNNE18cZC916F7OVNt6YE5P0NlCv/87d81+JNr2FiwsLDNhqt5Q==",
+  "dgSpecHash": "i3t6iQp+QBRX0qZ7l9pF3EFx8QxjZFW0Ce7OgAm+qxzSMVXE5Hkmw6azFRCZi9olAH2KtYjEXpA3BUuxBWfxeQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\milad\\Desktop\\MRSA-master\\WebAPI\\WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\milad\\Desktop\\MRSA\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\milad\\.nuget\\packages\\automapper\\8.1.1\\automapper.8.1.1.nupkg.sha512",
     "C:\\Users\\milad\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\6.1.1\\automapper.extensions.microsoft.dependencyinjection.6.1.1.nupkg.sha512",
