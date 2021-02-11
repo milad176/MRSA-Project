@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using WebAPI.Interfaces.Repositories;
+﻿using System.Threading.Tasks;
+using WebAPI.Repositories.Interfaces;
 
 namespace WebAPI.UnitOfWorks
 {
     public interface IUnitOfWork
     {
         ICityRepository CityRepository { get; }
+
+        IUserRepository UserRepository { get; }
 
         Task<bool> CompleteAsync();
     }

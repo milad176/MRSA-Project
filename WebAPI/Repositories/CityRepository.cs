@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using WebAPI.DbContexts;
 using WebAPI.Entities;
-using WebAPI.Interfaces.Repositories;
+using WebAPI.Repositories.Interfaces;
 
 namespace WebAPI.Repositories
 {

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
 using WebAPI.DbContexts;
-using WebAPI.Interfaces.Repositories;
 using WebAPI.Repositories;
+using WebAPI.Repositories.Interfaces;
 
 namespace WebAPI.UnitOfWorks
 {
@@ -17,6 +17,9 @@ namespace WebAPI.UnitOfWorks
 
         public ICityRepository CityRepository =>
             new CityRepository(_context);
+
+        public IUserRepository UserRepository =>
+            new UserRepository(_context);
 
         public async Task<bool> CompleteAsync()
         {

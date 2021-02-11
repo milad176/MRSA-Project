@@ -90,3 +90,10 @@ C:\Users\milad\Desktop\MRSA\WebAPI\obj\Debug\netcoreapp3.0\WebAPI.csproj.CopyCom
 C:\Users\milad\Desktop\MRSA\WebAPI\obj\Debug\netcoreapp3.0\WebAPI.dll
 C:\Users\milad\Desktop\MRSA\WebAPI\obj\Debug\netcoreapp3.0\WebAPI.pdb
 C:\Users\milad\Desktop\MRSA\WebAPI\obj\Debug\netcoreapp3.0\WebAPI.genruntimeconfig.cache
+C:\Users\milad\Desktop\MRSA\WebAPI\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\milad\Desktop\MRSA\WebAPI\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\milad\Desktop\MRSA\WebAPI\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\milad\Desktop\MRSA\WebAPI\bin\Debug\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\milad\Desktop\MRSA\WebAPI\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\milad\Desktop\MRSA\WebAPI\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\milad\Desktop\MRSA\WebAPI\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

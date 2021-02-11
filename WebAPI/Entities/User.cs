@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace WebAPI.Entities
 {
-    public class City
+    public class User
     {
         public int Id { get; set; }
 
-        public string Name { get; set; }
+        [Required]
+        public string Username { get; set; }
 
         [Required]
-        public string Country { get; set; }
-
+        public string Password { get; set; }
     }
 }
