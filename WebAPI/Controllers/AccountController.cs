@@ -2,9 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,7 +14,7 @@ namespace WebAPI.Controllers
 {
     [Route("api/account")]
     [ApiController]
-    public class AccountController: ControllerBase
+    public class AccountController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IConfiguration _configuration;
@@ -27,15 +25,29 @@ namespace WebAPI.Controllers
             _configuration = configuration;
         }
 
+        [HttpPost("register")]
+        public async Task<IActionResult> Register([FromBody] LoginRequest loginRequest)
+        {
+            var isUserAlreadyExist = await _unitOfWork.UserRepository.UserAlreadyExist(loginRequest.userName);
+
+            if (isUserAlreadyExist)
+                return BadRequest("this user name already exist, please choose another one");
+
+            _unitOfWork.UserRepository.Register(loginRequest.userName, loginRequest.password);
+            await _unitOfWork.CompleteAsync();
+
+            return StatusCode(201);
+        }
+
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequest loginRequest)
         {
-           var userFromRep = await _unitOfWork.UserRepository.Authenticate(loginRequest.userName, 
-               loginRequest.password);
+            var userFromRep = await _unitOfWork.UserRepository.Authenticate(loginRequest.userName,
+                loginRequest.password);
 
-           if(userFromRep == null)
+            if (userFromRep == null)
             {
-               return Unauthorized();
+                return Unauthorized();
             }
 
             var loginRes = new LoginResponse();
@@ -69,7 +81,7 @@ namespace WebAPI.Controllers
 
             var tokenHandler = new JwtSecurityTokenHandler();
             var token = tokenHandler.CreateToken(tokenDescription);
-            return tokenHandler.WriteToken(token); 
+            return tokenHandler.WriteToken(token);
         }
     }
 }

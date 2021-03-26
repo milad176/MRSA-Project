@@ -33,14 +33,6 @@ namespace WebAPI.DbContexts
                     Country = "United State"
                 });
 
-            modelBuilder.Entity<User>().HasData(
-                new User()
-                {
-                    Id = int.Parse("1"),
-                    Username = "Milad",
-                    Password = "milad@123"
-                });
-
             base.OnModelCreating(modelBuilder);
         }
     }

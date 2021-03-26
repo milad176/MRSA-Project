@@ -38,7 +38,7 @@ namespace WebAPI
             services.AddDbContext<DataContext>(options =>
             {
                 options.UseSqlServer(
-                    @"Data Source=.;Initial Catalog=MRSA;Integrated Security=SSPI;");
+                    Configuration.GetConnectionString("Default"));
             });
 
             var secretKey = Configuration.GetSection("AppSettings:Key").Value;
